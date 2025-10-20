@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode AI Hints (v1.2)",
+  "version": "1.2",
+  "description": "Get AI-powered hints for LeetCode problems.",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+    "matches": [
+    "https://leetcode.com/problems/*",
+    "https://leetcode.com/problems/*/*",
+    "https://leetcode.cn/problems/*",
+    "https://leetcode.cn/problems/*/*"
+  ]
+,
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:8000/*"
+  ]
+}
+

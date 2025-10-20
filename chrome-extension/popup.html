@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LeetCode AI Hints</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="images/icon48.png" alt="logo" class="logo">
+            <h1>LeetCode AI Hints</h1>
+        </div>
+        <p>Click the button below to get hints for the current problem.</p>
+        <button id="get-hints-btn">Get Hints!</button>
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>Generating hints...</p>
+        </div>
+        <div id="hints-container"></div>
+        <div id="error-container" class="hidden"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
