@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const loadingDiv = document.getElementById('loading');
     const errorContainer = document.getElementById('error-container');
 
-    const BACKEND_URL = "http://127.0.0.1:8000/hint";
+    const BACKEND_URL = "https://leet-hint.vercel.app/hint";
 
     // --- NEW FUNCTION TO HANDLE COMMUNICATION ---
     // This function will first check if the content script is ready.
